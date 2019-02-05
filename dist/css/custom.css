@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: auto 0;
+  font-family: Arial, sans-serif; }
+
+header {
+  padding: 0.5rem; }
+  header .desktop_nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly; }
+  header .mainlogo-icon {
+    margin-left: -10.5rem;
+    width: 96px;
+    height: 29px;
+    align-self: center; }
+  header .dropdown {
+    height: 0;
+    overflow-y: hidden;
+    transition: 1s;
+    width: 100%; }
+  header .dropdown a {
+    font-size: 18px;
+    padding-top: 3.5rem;
+    text-align: center;
+    color: #4a4a4a; }
+  header .dropdown a:hover {
+    color: #000000; }
+  header .exp .dropdown {
+    height: 100vh; }
+  header .drop-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-decoration: none; }
+  header .premium_templates, header .get_a_quote, header .account_desktop {
+    display: none; }
+
+.unlock_more {
+  display: none; }
+
+aside {
+  display: none; }
+
+main .container {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; }
+
+main .card {
+  width: 90%;
+  height: auto;
+  margin: 1rem;
+  box-shadow: 0px 5px 10px #ededed; }
+
+main .card_text {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem; }
+
+main span {
+  color: #9b9b9b;
+  text-transform: uppercase;
+  font-size: 0.75rem; }
+
+main .container_img {
+  position: relative;
+  width: 100%; }
+
+main .image {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+main .overlay {
+  position: absolute;
+  bottom: 0;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  transition: .5s ease;
+  opacity: 1;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .overlay span {
+    color: #ffffff;
+    text-transform: none;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 1.5rem; }
+
+footer {
+  width: 100%;
+  background-color: #666666; }
+  footer .footer_container {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+  footer span {
+    width: 50%;
+    padding: 0.5rem;
+    text-align: center;
+    color: #ffffff; }
+  footer .copyright {
+    color: #55b1f0;
+    padding: 1rem; }
+
+@media only screen and (min-width: 375px) and (max-width: 425px) {
+  header .mainlogo-icon {
+    margin-left: -11rem; } }
+
+@media only screen and (min-width: 768px) {
+  header .desktop_nav {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem; }
+  header .mainlogo-icon {
+    margin-left: 0; }
+  header .premium_templates, header .get_a_quote, header .unlock_more, header .account_desktop {
+    display: flex; }
+  header .premium_templates {
+    color: #147abf;
+    font-size: 1.3rem; }
+  header .get_a_quote {
+    background-color: #46b688;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.8rem; }
+  header .get_a_quote:hover {
+    color: #46b688;
+    background-color: #ffffff;
+    border: 1px solid #46b688;
+    cursor: pointer; }
+  header .account_desktop {
+    color: #68aad6;
+    border: 1.5px solid #68aad6;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.9rem; }
+    header .account_desktop svg {
+      fill: #68aad6; }
+  header .account_desktop:hover {
+    color: #ffffff;
+    background-color: #68aad6;
+    cursor: pointer; }
+    header .account_desktop:hover svg {
+      fill: #ffffff; }
+  header #current-item, header .account, header nav {
+    display: none; }
+  header .first_block, header .second_block {
+    width: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between; }
+    header .first_block div, header .second_block div {
+      margin-right: 1rem;
+      padding: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      white-space: nowrap; }
+  header .second_block {
+    justify-content: flex-end; }
+    header .second_block div {
+      margin: 0.2rem; }
+  .unlock_more {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    color: #1379bd;
+    background-color: #f0f0f0;
+    padding: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 700; }
+  .main_content {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center; }
+    .main_content aside {
+      width: 30%;
+      display: block;
+      background-color: #fafafa;
+      color: #929292;
+      padding: 0.8rem;
+      white-space: nowrap; }
+      .main_content aside p {
+        padding: 0.8rem; }
+    .main_content main {
+      width: 70%; }
+  main .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center; }
+  main .card {
+    width: 70%; }
+  footer span {
+    width: 25%; } }
+
+@media only screen and (min-width: 1024px) {
+  header .first_block {
+    width: 35%; }
+  header .second_block {
+    width: 65%; }
+    header .second_block .get_a_quote {
+      padding: 1rem;
+      margin-right: 1rem; }
+  .main_content aside {
+    width: 23%; }
+  .main_content main {
+    width: 77%; }
+    .main_content main .card {
+      width: 25%; }
+  footer {
+    display: flex;
+    justify-content: center; }
+    footer .footer_container {
+      width: 50%;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      footer .footer_container span {
+        width: 25%; }
+      footer .footer_container .copyright {
+        width: 100%;
+        text-align: center; } }
